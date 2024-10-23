@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ステータス計算機</title>
+  </head>
+  <script>
+    function calc() {
+      var hp = document.getElementById('HP').value;
+      var atk = document.getElementById('ATK').value;
+      document.getElementById("maxHP").innerText = `${Math.floor(hp * 3.4)}`;
+      document.getElementById("maxATK").innerText = `${Math.floor(atk * 3.4)}`;
+    }
+  </script>
+  <body>
+    <p>回廊から見られるHPとATK (星5レベル60潜在0絆0)を入力してください</p>
+    <p>その後、「計算する」ボタンを押すと、最大値を計算します</p>
+    <p>ふれあい上昇率70%想定です</p>
+        <p>
+          <span id="tab">HP:</span>
+          <input type="number" id="HP" value="7507"/>
+        </p>
+        <p>
+          <span id="tab">ATK:</span>
+          <input type="number" id="ATK" value="2099"/>
+        </p>
+      <button id="calcbt" onclick="calc()">計算する</button>
+      <p>
+        <span>MAXHP:</span>
+        <span id="maxHP">25523</span>
+      </p>
+      <p>
+        <span>MAXATK:</span>
+        <span id="maxATK">7136</span>
+      </p>
+      <p>
+        <img id = "image1" src="01.png">
+      </p>
+  </body>
+</html>
+
