@@ -10,6 +10,8 @@
       var atk = document.getElementById('ATK').value;
       document.getElementById("maxHP").innerText = `${Math.floor(hp * 3.4)}`;
       document.getElementById("maxATK").innerText = `${Math.floor(atk * 3.4)}`;
+      document.getElementById("maxHPATK").innerText = `${Math.floor(hp * 3.4)}/`;
+      document.getElementById("maxHPATK").innerText += `${Math.floor(atk * 3.4)}`;
     }
   </script>
   <body>
@@ -32,6 +34,10 @@
       <p>
         <span>MAXATK:</span>
         <span id="maxATK">7136</span>
+      </p>
+      <p>
+        <span>MAXHP/ATK:</span>
+        <span id="maxHPATK">25523/7136</span>
       </p>
       <p>
         <img id = "image1" src="01.png">
